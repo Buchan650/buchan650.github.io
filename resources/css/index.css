@@ -41,6 +41,8 @@ nav{
     background-color: black;
     margin: 0;
     padding: 0;
+    position: fixed;
+    background-image: url("resources/181002113456-01-golden-gate-bridge-restricted.jpg");
 }
 
 nav h1{
@@ -61,5 +63,43 @@ nav ul{
 }
 
 .navbarlinks{
-    font-size: 0.75rem;
+    font-size: 0.75rem;   
+}
+
+/*Banner*/
+
+#banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container1{
+    display: flex;
+    width: 50%;
+    margin-top: 6rem;
+    justify-content: center;
+}
+
+.image-container1 img{
+    width: 75%;
+    border: 3px solid black;
+    border-radius: 50%;
+
+}
+
+.text-content1{
+    width: 50%;
+    margin: 6rem 2rem 2rem;
+}
+
+.text-content1 p{
+    width: 75%;
+    margin: 2rem;
+    padding: 0%;
+}
+
+.text-content1 h2{
+    margin: 2rem;
+    padding: 0;
 }
