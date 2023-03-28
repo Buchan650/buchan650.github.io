@@ -102,4 +102,54 @@ nav ul{
 .text-content1 h2{
     margin: 2rem;
     padding: 0;
+    font-size: 3rem;
+}
+
+/*Education*/
+
+#education{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.image-container2{
+    display: flex;
+    width: 50%;
+    margin-top: 6rem;
+    justify-content: center;
+    background-color: black;
+}
+
+.image-container2 img{
+    width: 75%;
+    border: 3px solid black;
+}
+
+.text-content2{
+    width: 50%;
+    margin: 6rem 2rem 2rem;
+    color: white;
+}
+
+.text-content2 ul{
+    width: 75%;
+    margin: 2rem;
+    padding: 0%;
+    font-size: 0.75rem;
+    line-height: 2;
+}
+
+.text-content2 h2{
+    margin: 2rem;
+    padding: 0;
+    font-size: 3rem;
+}
+strong{
+    color: red;
+}
+
+em{
+    font-style: rgb(90, 0, 0);
 }
