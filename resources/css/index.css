@@ -46,7 +46,7 @@ nav{
     margin: 0;
     padding: 0;
     position: fixed;
-    background-image: url("resources/181002113456-01-golden-gate-bridge-restricted.jpg");
+    background-image: url("./resources/181002113456-01-golden-gate-bridge-restricted.jpg");
 }
 
 nav h1{
@@ -209,10 +209,6 @@ em{
     justify-content: center;
 }
 
-.text-content3 p{
-
-}
-
 #hobbies iframe{
     width: 35rem;
     height:19.7;
@@ -222,4 +218,43 @@ em{
     width: 80%;
     height: auto;
     padding: 0;
+}
+
+/*Family*/
+
+#family{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+#family h2{
+    font-size: 3rem;
+    padding: 3rem;
+    margin: 0;
+}
+
+.flex-container-fam{
+    display: flex;
+    width: 100%;
+}
+
+.fammembers{
+    display: flex;
+    flex-direction: column;
+    width:25%;
+}
+
+.image-container3{
+    width: 100%;
+}
+
+.image-container3 img{
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
+}
+
+.text-content4 h3{
+    text-align: center;
 }
