@@ -293,22 +293,35 @@ iframe{
 
  .flex-container-fam{
     display: flex;
+    width: 100%;
  }
 
  .image-container2{
-    width: 90%;
+    width: 100%;
     height: auto;
+    margin: 0 auto;
+    padding: 0;
  }
 
  .image-container2 img{
     width: 100%;
     height: auto;
     padding: 0;
-    margin: 2rem;
+    margin: 0;
     border: 1px solid transparent;
     border-radius: 0.6rem;
  }
-
+.fammembers{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+}
+ .text-content2 li{
+    width: 90%;
+    height: auto;
+    margin: 1rem;
+ }
  /*Footer*/
 
  #footnav{
