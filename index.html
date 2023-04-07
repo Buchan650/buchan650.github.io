@@ -6,14 +6,18 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Roboto&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
 
 
     </head>
     <body>
         <header>
             <nav>
-                <h1>Breon D. Curry</h1>
+                <h1>Breon D. <span>Curry</span></h1>
                 <ul>
                     <li class="navbarlinks"><a href="#banner">About me</a></li>
                     <li class="navbarlinks"><a href="#education">Education</a></li>
@@ -23,11 +27,11 @@
             </nav>
         </header>
         <main>
-            <div id="banner">
-                <div class="image-container1">
+            <section id="banner">
+                <div class="image-container">
                     <img src="./resources/IMG_1542.jpg" alt="Picture of Breon">
                 </div>
-                <div class="text-content1">
+                <div class="text-content">
                     <h2>About Me</h2>
                     <p>Hello everyone! My name is Breon Dante Curry. I was born and 
                         raised in Daly City, California but I currently reside in Gifu, 
@@ -38,36 +42,36 @@
                         to make a career change. Thank you for taking the time to visit my
                          page. This page will continue to evolve as I attain more skills.</p>
                 </div>
-            </div>
-            <div id="education">
-                <div class="text-content2">
+            </section>
+            <section id="education">
+                <div class="text-content">
                     <h2>Education</h2>
                     <ul>
-                        <li><strong>Westmoor High School</strong> <br>Daly City, California, Class of 2002</li>
-                        <li><strong>San Diego State University</strong> <br>San Diego, California, Class 0f 2008 
+                        <li><span>Westmoor High School</span> <br>Daly City, California, Class of 2002</li>
+                        <li><span>San Diego State University</span> <br>San Diego, California, Class 0f 2008 
                         <br>Japanese & Linguistics</li>
-                        <li><strong>Hirosaki University</strong> <br>Hirosaki, Aomori, Japan <br>1 year exchange program
+                        <li><span>Hirosaki University</span> <br>Hirosaki, Aomori, Japan <br>1 year exchange program
                         <br>Japanese & International Business</li>
                     </ul>
                 </div>
-                <div class="image-container2">
+                <div class="image-container">
                     <img src="./resources/IMG_7681.JPG" alt="SDSU logo">
                 </div>
-            </div>
-            <div id="hobbies">
+            </section>
+            <section id="hobbies">
                 <h2>Hobbies</h2>
                 <div id="jiujitsu">
                     <div class="video-container">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/rQnpmBXn6DU" title="YouTube video player" 
                         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; 
                         web-share" allowfullscreen alt="Jiu jitsu technique taught by Breon Curry"></iframe>
-                        <p>For more techniques <a href="https://www.youtube.com/@PARAGIFU" target="_blank" aria-label="Link to Paraestra Gifu YouTube page">Click here</a></p>
+                        <p>For more techniques <a class="button" href="https://www.youtube.com/@PARAGIFU" target="_blank" aria-label="Link to Paraestra Gifu YouTube page">Click here</a></p>
                     </div>
-                    <div class="text-content3">
+                    <div class="text-content">
                         <h3>Brazilian Jiu Jitsu</h3>
                         <p>I have trianed in the art of Brazilian jiu jitsu for over a decade and I am the first (and only) American to recieve his black belt from 
-                            Japanese jiu jitsu legend, <a href="https://en.wikipedia.org/wiki/Yuki_Nakai" target="_blank" aria-label="Link to Yuki Nakai wikipedia">Yuki Nakai</a>. 
-                            I am currently the head jiu jitsu instructor at <a href="https://paragifu.com/" target="_blank" aria-label="Link to Paraestra Gifu website">Paraestra Gifu</a>. I teach 
+                            Japanese jiu jitsu legend, <a class="jiujitsulinks" href="https://en.wikipedia.org/wiki/Yuki_Nakai" target="_blank" aria-label="Link to Yuki Nakai wikipedia">Yuki Nakai</a>. 
+                            I am currently the head jiu jitsu instructor at <a class="jiujitsulinks" href="https://paragifu.com/" target="_blank" aria-label="Link to Paraestra Gifu website">Paraestra Gifu</a>. I teach 
                             classes on Thursday nights, Saturday nights and Sunday mornings. Guest are always welcome so feel free to drop 
                             by if you fiind yourself in the area.</p>
                     </div>
@@ -76,7 +80,7 @@
                     <div class="video-container">
                         <video src="./resources/IMG_2802.mov" controls alt="Video of Breon from 2023 Kakamigahara Marathon"></video>
                     </div>
-                    <div class="text-content3">
+                    <div class="text-content">
                         <h3>Running & Weight Training</h3>
                         <p>Running and weight training are an integral part of my life. I run and lift weights at least three times a week, respectively. 
                             For a lot people, fitness is a means to a better physique and a healthier life and although those things are important to me, 
@@ -86,70 +90,71 @@
                         </p>
                     </div>
                 </div>
-            </div>
-            <div id="family">
+            </section>
+            <section id="family">
                 <h2>Family</h2>
-                <p>These are the amazing members of my family. Being a husband and a father isn't always easy but nothing makes me happier than seeing them smile.</p>
+                <p>These are the amazing members of my family. Being a husband and a father<br>isn't always easy but nothing makes me happier than seeing them smile.</p>
                 <div class="flex-container-fam">
                     <div class="fammembers">
-                        <div class="image-container3">
+                        <div class="image-container2">
                             <img src="./resources/IMG_8044.jpg" alt="Picture of Asuka">
                         </div>
-                        <div class="text-content4">
-                            <h3>Asuka Curry(Imamiya)</h3>
+                        <div class="text-content2">
+                            <h4>Asuka Curry(Imamiya)</h4>
                             <ul>
                                 <li>Age: 38</li>
                                 <li>Hometown: Seki, Gifu</li>
-                                <li>Hobbies: Playing the trumpet</li>
+                                <li>Hobbies: Playing the Trumpet</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="fammembers">
-                        <div class="image-container3">
-                            <img src="./resources/IMG_9368.jpeg" alt="Picture of Noah">
-                        </div>
-                        <div class="text-content4">
-                            <h3>Noah Joseph Curry</h3>
-                            <ul>
-                                <li>Age: 11</li>
-                                <li>Hometown: Kakamigahara, Gifu</li>
-                                <li>Hobbies: Basketball & videogames</li>
-                            </ul>
-                        </div>
-                    </div> 
-                    <div class="fammembers">  
-                        <div class="image-container3">
-                            <img src="./resources/IMG_7916.jpeg" alt="Picture of Jonah">
-                        </div>
-                        <div class="text-content4">
-                            <h3>Jonah Roy Curry</h3>
-                            <ul>
-                                <li>Age: 8</li>
-                                <li>Hometown: Kakamigahara, Gifu</li>
-                                <li>Hobbies: Basketball, jiu jitsu & videogames</li>
-                            </ul>
-                        </div>
+                <div class="fammembers">
+                    <div class="image-container2">
+                        <img src="./resources/IMG_9368.jpeg" alt="Picture of Noah">
                     </div>
-                    <div class="fammembers" >
-                        <div class="image-container3">
-                            <img src="./resources/IMG_6912.jpeg" alt="Picture of Aaliyah">
-                        </div>
-                        <div class="text-content4">
-                            <h3>Aaliyah Chisato Curry</h3>
-                            <ul>
-                                <li>Age: 4</li>
-                                <li>Hometown: Kakamigahara, Gifu</li>
-                                <li>Hobbies: Dancing</li>
-                            </ul>
-                        </div>
+                    <div class="text-content2">
+                        <h4>Noah Joseph Curry</h4>
+                        <ul>
+                            <li>Age: 12</li>
+                            <li>Hometown: Kakamigahara, Gifu</li>
+                            <li>Hobbies: Basketball & Videogames</li>
+                        </ul>
+                    </div>
+                </div> 
+                <div class="fammembers">  
+                    <div class="image-container2">
+                        <img src="./resources/IMG_7916.jpeg" alt="Picture of Jonah">
+                    </div>
+                    <div class="text-content2">
+                        <h4>Jonah Roy Curry</h4>
+                        <ul>
+                            <li>Age: 8</li>
+                            <li>Hometown: Kakamigahara, Gifu</li>
+                            <li>Hobbies: Basketball, Jiu Jitsu & Videogames</li>
+                        </ul>
                     </div>
                 </div>
-            </div>
+                <div class="fammembers" >
+                    <div class="image-container2">
+                        <img src="./resources/IMG_6912.jpeg" alt="Picture of Aaliyah">
+                    </div>
+                    <div class="text-content2">
+                        <h4>Aaliyah Chisato Curry</h4>
+                         <ul>
+                            <li>Age: 4</li>
+                            <li>Hometown: Kakamigahara, Gifu</li>
+                            <li>Hobbies: Dancing</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>    
         </main>
         <footer>
-                <h4>Please check out my social media accounts <a href="https://www.instagram.com/38_sava9e/" 
-                    target="_blank" aria-label="Link to Breon's Instagram"><i class="fa fa-instagram fa-2x">
-                    </i></a><a href="https://www.facebook.com/BreonCurryJapan" target="_blank" aria-label="Link to Breon's Facebook"><i class="fa fa-facebook fa-2x"></i></a></h4>
+            <div id="footnav">
+                <h4>Email: Breon.curry650@gmail.com<br>Please check out my social media accounts <a href="https://www.instagram.com/38_sava9e/" 
+                target="_blank" aria-label="Link to Breon's Instagram"><i class="fa fa-instagram fa-2x">
+                </i></a><a href="https://www.facebook.com/BreonCurryJapan" target="_blank" aria-label="Link to Breon's Facebook"><i class="fa fa-facebook fa-2x"></i></a></h4>
+            </div>
         </footer>
     </body>
 </html>

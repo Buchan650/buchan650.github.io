@@ -1,38 +1,74 @@
-/*Universal*/
+/*Universal Styles*/
 
 *{
     box-sizing: border-box;
-}
-
-html{
     font-size: 16px;
     font-family: 'Krona One', sans-serif;
-}
-
-a:link {
-    text-decoration: none;
-}
-  
-a:visited {
-    text-decoration: none;
-}
-
-a:link {
-    color: rgb(255, 255, 255);
-}
-a:visited {
-    color: rgb(255, 255, 255);
-}
-
-a:hover{
-    color: red;
+    margin: 0;
+    padding: 0;
 }
 
 body{
-    width: 100%;
-    margin: 0%;
-    padding: 0%;
+    background-color: #7A251D;
 }
+
+h2{
+    margin: 1rem 1rem 0;
+    padding: 1rem 1rem 0;
+    font-size: 2.5rem;
+}
+
+h3{
+    margin: 1rem auto;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+p{
+    font-family: "Playfair Display";
+    line-height: 2rem;
+}
+h4{
+    text-align: center;
+    color:#FA4C3C;
+}
+
+li{
+    font-family: "Playfair Display";
+}
+
+ /*Media & Text Containers*/
+
+ .image-container, .text-content, .video-container{
+    width: 50%;
+    height: auto;
+    margin: auto;
+}
+
+.image-container img{
+    width: 80%;
+    height: auto;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+.video-container video, .video-container iframe{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 2rem;
+}
+
+.video-container{
+    padding: 0;
+    margin: auto 0;
+}
+
+.text-content p{
+    margin: 0 2rem 0 1rem;
+    padding: 1rem 2rem 1rem 1rem;
+}
+
 
 /*Navigation Bar*/
 
@@ -40,234 +76,269 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width:100%;
-    height: 6rem;
-    background-color: black;
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    background-image: url("./resources/181002113456-01-golden-gate-bridge-restricted.jpg");
+    width: 100%;
+    height: 8rem;
+    position:fixed;
+    background-color: #7A251D;
+    top: 0;
 }
 
 nav h1{
-    width: 50%;
-    color: gray;
     padding: 1rem;
-    margin: 0;
-    text-align: center;
-
+    margin: 1rem;
+    font-size: 3rem;
+    color: #FA4C3C;
 }
+
+nav h1 span{
+    color: #FA9187;
+    font-size: 3rem;
+}
+
 nav ul{
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    width: 50%;
-    margin: 0;
-    padding: 1rem;
+    list-style-type: none;
 }
 
 .navbarlinks{
-    font-size: 0.75rem;   
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.navbarlinks a{
+    text-decoration: none;
+    color: #FA4C3C;
+}
+
+.navbarlinks a:visited{
+    color: #FA4C3C;
+}
+
+.navbarlinks a:hover{
+    color: #FA9187;
+    font-weight: 700;
+}
+
+.navbarlinks a:active{
+    color: #fff;
 }
 
 /*Banner*/
 
 #banner{
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.image-container1{
-    display: flex;
-    width: 50%;
-    margin-top: 6rem;
-    justify-content: center;
-}
-
-.image-container1 img{
-    width: 75%;
-    border: 3px solid black;
-    border-radius: 50%;
-
-}
-
-.text-content1{
-    width: 50%;
-    margin: 6rem 2rem 2rem;
-}
-
-.text-content1 p{
-    width: 75%;
-    margin: 2rem;
-    padding: 0%;
-}
-
-.text-content1 h2{
-    margin: 2rem;
+    width: 90%;
+    height: auto;
+    justify-content:space-around;
     padding: 0;
-    font-size: 3rem;
+    margin: 8rem auto 0;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 1.25rem;
+    scroll-margin-top: 8rem;
+}
+
+#banner img{
+    border: 1px solid transparent;
+    border-radius: 1.25rem;
+    padding: 0;
+    margin: 2rem;
+}
+
+#banner p, #banner h2{
+    color: #7A4742;
+
 }
 
 /*Education*/
 
 #education{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
+    width: 90%;
+    justify-content:space-around;
+    padding: 1rem;
+    margin: 2rem auto;
+    scroll-margin-top: 8rem;
 }
 
-.image-container2{
-    display: flex;
-    width: 50%;
-    margin: 4rem auto;
-    justify-content: center;
-    background-color: black;
+#education h2, #education li{
+    color: #FA9187;
 }
 
-.image-container2 img{
-    width: 75%;
-    border: 3px solid black;
+#education h2{
+    margin-bottom: 2rem;
 }
 
-.text-content2{
-    width: 50%;
-    margin: 6rem 3rem;
+#education span{
+    font-family: "Playfair Display";
+    color: #FA4C3C;
+    font-size: 2rem;
+}
+
+#education img{
+    border: 1px solid #FA4C3C;
+    border-radius: 1rem;
     padding: 0;
-    color: white;
 }
 
-.text-content2 ul{
-    width: 75%;
-    margin: 2rem;
-    padding: 0%;
-    font-size: 0.75rem;
-    line-height: 2;
-}
-
-.text-content2 h2{
-    margin: 0;
-    padding: 0;
-    font-size: 3rem;
-}
-strong{
-    color: red;
-}
-
-em{
-    font-style: rgb(90, 0, 0);
-}
 /*Hobbies*/
 
 #hobbies{
-    display:flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
+    padding: 1rem;
+    margin: 2rem auto;
+    width: 90%;
+    height: auto;
+    background-color: #fff;
+    border: 1px solid transparent;
+    border-radius: 1.25rem;
+    scroll-margin-top: 8rem;
 }
 
-#hobbies h2{
-    font-size: 3rem;
-    padding: 3rem;
+#hobbies h2, #hobbies p{
+    color: #7A4742;
 }
 
-#hobbies a{
-    color:blue;
-    text-decoration: underline;
+#hobbies h3{
+    color: #C73C30;
 }
 
 #jiujitsu{
     display: flex;
-    align-items: center;
     width: 100%;
-    height: auto;
-    padding: 3rem;
-    margin: 0;
+    justify-content:space-around;
+}
+
+.jiujitsulinks{
+    font-family: "Playfair Display";
+    color: blue;
+}
+
+.jiujitsulinks:visited{
+    color: blue;
+}
+
+.jiujitsulinks:hover{
+    color: aqua;
+}
+
+.jiujitsulinks:active{
+    color: red;
+}
+
+iframe{
+    height:315px;
+    width:560;
+}
+
+.button{
+    background-color: rgb(72, 187, 26);
+    color:#fff;
+    padding: .5rem;
+    border: 1px solid transparent;
+    border-radius: .5rem;
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button:visited{
+    background-color: rgb(72, 187, 26);
+    color: #fff;
+}
+
+.button:hover{
+    background-color: rgb(28, 255, 8);
+    color:#fff;
+    font-weight: 700;
+}
+
+.button:active{
+    background-color: #fff;
+    color: rgb(72, 187, 26);
+    border: 1px solid rgb(72, 187, 26);
+
 }
 
 #running{
     display: flex;
     width: 100%;
+    justify-content:space-around;
+}
+
+/*Family Section*/
+
+ #family{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: 3rem;
-    margin: 0;
-    background-color: gray;
-
-}
-.video-container{
-    width: 100%;
-    height: 100%;
-    margin: 1rem 1rem;
-    padding: 0;
-    justify-content: center;
+    scroll-margin-top: 8rem;
+    background-color:#7A251D;
+    margin: 3rem 3rem 6rem;
+ }
+ 
+ #family h2{
+    color: #FA4C3C;
 }
 
-.text-content3{
-    width: 50%;
-    margin: 6rem 3rem;
-    justify-content: center;
-}
+ #family li{
+    line-height: 2rem;
+    color: #FA9187;
+ }
 
-#hobbies iframe{
-    width: 35rem;
-    height:19.7;
-} 
-
-#hobbies video{
-    width: 80%;
-    height: auto;
-    padding: 0;
-}
-
-/*Family*/
-
-#family{
-    display: flex;
-    flex-direction: column;
-    height: auto;
-}
-
-#family h2{
-    font-size: 3rem;
-    padding: 3rem 0;
-    margin: 3rem;
-}
-
-.flex-container-fam{
-    display: flex;
-    width: 100%;
-}
-
-.fammembers{
-    display: flex;
-    flex-direction: column;
-    width:25%;
-}
-
-.image-container3{
-    width: 100%;
-}
-
-.image-container3 img{
-    width: 100%;
-    padding: 1rem;
-    margin: 0;
-}
-
-.text-content4 h3{
+ #family p{
     text-align: center;
-}
-/*Footer*/
+    color:#FA9187;
+ }
 
-footer{
+ .flex-container-fam{
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+ }
+
+ .image-container2{
+    width: 90%;
+    height: auto;
+ }
+
+ .image-container2 img{
     width: 100%;
-    height: 6rem;
-    background-color: black;
-    color: white;
-    padding: 2rem;
-    margin-top: 3rem;
+    height: auto;
+    padding: 0;
+    margin: 2rem;
+    border: 1px solid transparent;
+    border-radius: 0.6rem;
+ }
+
+ /*Footer*/
+
+ #footnav{
+    height: 5rem;
+    width: 100%;
+    bottom: 0;
+    background-color: #FA9187;
+}
+
+#footnav h4{
+    padding: 1rem;
+    margin: 1rem;
+    color: #7A4742;
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+#footnav a{
+    color: #7A4742;
+}
+
+#footnav a:visited{
+    color: #7A4742;
+}
+
+#footnav a:hover{
+    color:#FA4C3C;
+    font-weight: 700;
+}
+
+#footnav a:active{
+    color:#7A251D;
 }
