@@ -69,6 +69,18 @@ li{
     padding: 1rem 2rem 1rem 1rem;
 }
 
+@media only screen and (max-width : 768px){
+    .image-container, .text-content, .video-container{
+        width: 100%;
+        padding: 0;
+        height: auto;
+        margin: 1rem;
+    }
+    .image-container img{
+        padding: 0;
+        margin: 0 auto;
+    }
+}
 
 /*Navigation Bar*/
 
@@ -124,6 +136,15 @@ nav ul{
     color: #fff;
 }
 
+@media only screen and (max-width : 768px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        height: 12rem;
+        justify-content: center;
+    }
+}
+
 /*Banner*/
 
 #banner{
@@ -151,6 +172,15 @@ nav ul{
 
 }
 
+@media only screen and (max-width : 768px){
+    #banner{
+        padding: 0;
+        margin: 12rem auto 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+}    
 /*Education*/
 
 #education{
@@ -182,6 +212,27 @@ nav ul{
     padding: 0;
 }
 
+@media only screen and (max-width : 768px){
+    #education{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+        padding: 1rem;
+        margin: 1rem;
+        scroll-margin-top: 8rem;
+    }
+    #education li{
+        margin-left: 3rem;
+    }
+    #education img{
+        padding: 0;
+        margin: 1rem auto;
+        width: 100%;
+        height: auto;
+    }  
+
+}
 /*Hobbies*/
 
 #hobbies{
@@ -266,6 +317,22 @@ iframe{
     justify-content:space-around;
 }
 
+@media only screen and (max-width : 768px){
+    #jiujitsu{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width : 768px){
+    #running{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+}
+
 /*Family Section*/
 
  #family{
@@ -292,19 +359,19 @@ iframe{
  }
 
  .flex-container-fam{
-    display: flex;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
  }
 
  .image-container2{
-    width: 100%;
+    width: 90%;
     height: auto;
     margin: 0 auto;
     padding: 0;
  }
 
  .image-container2 img{
-    width: 100%;
+    width: 90%;
     height: auto;
     padding: 0;
     margin: 0;
@@ -312,15 +379,31 @@ iframe{
     border-radius: 0.6rem;
  }
 .fammembers{
-    display: flex;
+    display:inline-block;
     flex-direction: column;
     align-items: center;
-    padding: 1.5rem;
+    padding: 1rem;
+    width: 90%;
+    height: auto;
 }
  .text-content2 li{
     width: 90%;
     height: auto;
     margin: 1rem;
+ }
+
+ @media only screen and (max-width : 768px){
+    image-container2 img{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+    .fammembers{
+        align-items: center;
+        width: 100%;
+        height: auto;
+    }
  }
  /*Footer*/
 
