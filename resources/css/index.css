@@ -10,6 +10,7 @@
 
 body{
     background-color: #7A251D;
+    min-width: 320px;
 }
 
 h2{
@@ -78,19 +79,13 @@ li{
 @media only screen and (max-width : 768px){
     .image-container, .text-content, .video-container{
         width: 100%;
-        padding: 0;
-        height: auto;
-        margin: 0 auto;
+        display:flex;
+        flex-direction: column;
         align-items: center;
+        padding: 1rem;
+        height: auto;
     }
-    .image-container img{
-        padding: 0;
-        margin: 0 auto;
-    }
-    .text-content{
-        max-height: 15rem;
-        overflow: scroll;
-    }
+    
     p{
         margin: 0;
         padding: 0;
@@ -155,7 +150,7 @@ nav ul{
     nav{
         display: flex;
         flex-direction: column;
-        height: 12rem;
+        height: 10rem;
         justify-content: center;
     }
 
@@ -180,7 +175,7 @@ nav ul{
     }
 
     .navbarlinks a{
-        font-size: 70%;
+        font-size: 1rem;
         padding-bottom: 0;
     }
 }
@@ -215,12 +210,14 @@ nav ul{
 @media only screen and (max-width : 768px){
     #banner{
         padding: 0;
-        margin: 14rem auto 0;
+        margin: 10rem auto 0;
         display: flex;
         flex-direction: column;
-        scroll-margin-top: 10rem;
+        scroll-margin-top: 13rem;
     }
-
+    #banner .image-container{
+        width: 100%;
+    }
 }    
 /*Education*/
 
@@ -260,8 +257,8 @@ nav ul{
         width: 90%;
         align-items: center;
         padding: 1rem;
-        margin: 1rem;
-        scroll-margin-top: 8rem;
+        margin: 1rem auto;
+        scroll-margin-top: 10rem;
     }
 
     #education h2{
@@ -441,17 +438,14 @@ iframe{
 
  @media only screen and (max-width : 768px){
     #family{
-        max-height: 40rem;
         scroll-margin-top: 10rem;
-        overflow: scroll;
     }
 
     .flex-container-fam{
         display: flex;
-        flex-direction: column;
-        width: 90%;
+        flex-wrap: wrap;
+        width: 100%;
         margin: 0 auto;
-        align-items: center;
      }
 
     .image-container2 img{
@@ -460,10 +454,18 @@ iframe{
         margin: 0 auto;
         padding: 0;
     }
+
+    .text-content2{
+        width: 100%;
+        height: auto;
+    }
     .fammembers{
         align-items: center;
-        width: 80%;
+        width: 50%;
         height: auto;
+    }
+    .text-content2 li{
+        margin: 0;
     }
  }
  /*Footer*/
