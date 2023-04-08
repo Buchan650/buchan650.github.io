@@ -37,6 +37,12 @@ li{
     font-family: "Playfair Display";
 }
 
+@media only screen and (max-width : 768px){
+    *{
+        font-size: 14px;
+    }
+}
+
  /*Media & Text Containers*/
 
  .image-container, .text-content, .video-container{
@@ -74,11 +80,20 @@ li{
         width: 100%;
         padding: 0;
         height: auto;
-        margin: 1rem;
+        margin: 0 auto;
+        align-items: center;
     }
     .image-container img{
         padding: 0;
         margin: 0 auto;
+    }
+    .text-content{
+        max-height: 15rem;
+        overflow: scroll;
+    }
+    p{
+        margin: 0;
+        padding: 0;
     }
 }
 
@@ -143,6 +158,31 @@ nav ul{
         height: 12rem;
         justify-content: center;
     }
+
+    nav h1{
+        padding: .5rem;
+        margin: .5rem;
+        font-size: 2rem;
+    }
+
+    nav h1 span{
+        font-size: 2rem;
+    }
+
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .navbarlinks{
+        padding: 0 1rem;
+        margin: 0;
+    }
+
+    .navbarlinks a{
+        font-size: 70%;
+        padding-bottom: 0;
+    }
 }
 
 /*Banner*/
@@ -175,9 +215,10 @@ nav ul{
 @media only screen and (max-width : 768px){
     #banner{
         padding: 0;
-        margin: 12rem auto 0;
+        margin: 14rem auto 0;
         display: flex;
         flex-direction: column;
+        scroll-margin-top: 10rem;
     }
 
 }    
@@ -221,6 +262,10 @@ nav ul{
         padding: 1rem;
         margin: 1rem;
         scroll-margin-top: 8rem;
+    }
+
+    #education h2{
+        font-size: 2rem;
     }
     #education li{
         margin-left: 3rem;
@@ -318,14 +363,15 @@ iframe{
 }
 
 @media only screen and (max-width : 768px){
+    #hobbies{
+        scroll-margin-top: 10rem;
+    }
     #jiujitsu{
         display: flex;
         flex-direction: column-reverse;
         width: 100%;
     }
-}
 
-@media only screen and (max-width : 768px){
     #running{
         display: flex;
         flex-direction: column-reverse;
@@ -359,12 +405,13 @@ iframe{
  }
 
  .flex-container-fam{
+    display: flex;
     width: 90%;
     margin: 0 auto;
  }
 
  .image-container2{
-    width: 90%;
+    width: 100%;
     height: auto;
     margin: 0 auto;
     padding: 0;
@@ -379,29 +426,43 @@ iframe{
     border-radius: 0.6rem;
  }
 .fammembers{
-    display:inline-block;
+    display:flex;
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-    width: 90%;
+    width: 25%;
     height: auto;
 }
  .text-content2 li{
-    width: 90%;
+    width: 100%;
     height: auto;
     margin: 1rem;
  }
 
  @media only screen and (max-width : 768px){
-    image-container2 img{
+    #family{
+        max-height: 40rem;
+        scroll-margin-top: 10rem;
+        overflow: scroll;
+    }
+
+    .flex-container-fam{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        align-items: center;
+     }
+
+    .image-container2 img{
         width: 100%;
         height: auto;
-        margin: 0;
+        margin: 0 auto;
         padding: 0;
     }
     .fammembers{
         align-items: center;
-        width: 100%;
+        width: 80%;
         height: auto;
     }
  }
@@ -437,4 +498,10 @@ iframe{
 
 #footnav a:active{
     color:#7A251D;
+}
+
+@media only screen and (max-width : 768px){
+    #footnav{
+        height: fit-content;
+    }
 }
