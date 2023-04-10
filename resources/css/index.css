@@ -103,6 +103,7 @@ nav{
     position:fixed;
     background-color: #7A251D;
     top: 0;
+    z-index: 1;
 }
 
 nav h1{
