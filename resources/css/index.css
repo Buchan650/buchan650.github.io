@@ -487,11 +487,11 @@ iframe{
 }
 
 #footnav a{
-    color: #7A4742;
+    color:#7A251D;
 }
 
 #footnav a:visited{
-    color: #7A4742;
+    color:#7A251D;
 }
 
 #footnav a:hover{
@@ -500,8 +500,12 @@ iframe{
 }
 
 #footnav a:active{
-    color:#7A251D;
+    color:#C73C30;
 }
+
+i {
+    margin: .25rem;
+  }
 
 @media only screen and (max-width : 768px){
     #footnav{
