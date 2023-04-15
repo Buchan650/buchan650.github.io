@@ -511,4 +511,7 @@ i {
     #footnav{
         height: fit-content;
     }
+    #footnav h4, #footnav a{
+        font-size: .75rem;
+    }
 }
