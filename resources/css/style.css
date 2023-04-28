@@ -146,6 +146,10 @@ nav ul{
 .navbarlinks a:active{
     color: #fff;
 }
+nav img{
+    width: 2rem;
+    height: auto;
+}
 
 @media only screen and (max-width : 768px){
     nav{
