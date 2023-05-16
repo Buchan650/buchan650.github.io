@@ -120,7 +120,7 @@ nav h1 span{
 
 nav ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style-type: none;
 }
 
@@ -151,7 +151,7 @@ nav img{
     height: auto;
 }
 
-@media only screen and (max-width : 768px){
+@media only screen and (max-width : 820px){
     nav{
         display: flex;
         flex-direction: column;
@@ -180,7 +180,13 @@ nav img{
     }
 
     .navbarlinks a{
-        font-size: 1rem;
+        font-size: 1.2rem;
+        padding-bottom: 0;
+    }
+}
+@media only screen and (max-width: 425px){
+    .navbarlinks a{
+        font-size: .6rem;
         padding-bottom: 0;
     }
 }
@@ -224,6 +230,12 @@ nav img{
         width: 100%;
     }
 }    
+@media only screen and (max-width : 820px){
+    #banner{
+        margin:12rem auto 0;
+        scroll-margin-top: 13rem;
+    }
+}
 /*Education*/
 
 #education{
